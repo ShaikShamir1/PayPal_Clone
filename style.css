@@ -69,51 +69,74 @@ header .n4 svg{
 header .n1:hover svg,header .n2:hover svg,header .n3:hover svg,header .n4:hover svg{
     transform: rotateZ(-180deg);
 }
-header .n1:hover .nav_part{
+.n1:hover .nav_part,.n2:hover .nav_part,.n3:hover .nav_part,.n4:hover .nav_part{
     opacity: 100%;
+    width: 99vw;
+    height: 23vh;
+}
+header .navo li a:hover{
+    text-decoration: underline;
 }
 header .n1{
     position: relative;
 }
 .nav_part{
     opacity: 0;
-    height: 23vh;
+    height: 0;
     background-color: #012169;
     border-bottom: 1px solid white;
-    padding: 1rem 13rem;
+    padding: 0 13rem;
     display: flex;
     justify-content: space-between;
     position: absolute;
-    bottom: -10rem;
+    top: 2.5rem;
+    left:-29rem;
     z-index: 10;
+    transition: all ease 0.5s;
 }
-.nav1{
+.navo{
     list-style-type: none;
     width: 30rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
 }
-.nav1 li{
+.navo li{
     width:13rem ;
     line-height: 1.5rem;
     margin-bottom: 2rem;
 }
-.nav1 a{
+.navo a{
     color: #fff;
     text-decoration: none;
+    font-size: 13px;
+    text-transform: capitalize;
 }
-.nav1 p{
-    font-size: 12px;
+.navo p{
+    font-size: 11px;
 }
 .nav_part svg{
-    height: 2rem;
+    height: 20rem;
     color: white;
-}
-.header li:hover .nav_part{
-    opacity: 100%;
+    position: absolute;
+    top: 10%;
+    right: 13rem;
 }
 
+
+
+.n3 .navo{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+.n4 .navo{
+    width: 50rem;
+}
+.n4 .navo li{
+    width: 14rem;
+}
 
 header article a{
     display: inline-block;
